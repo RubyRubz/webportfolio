@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Welcome To My Portfolio Site!</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class=" fixed-top">
+            <div id="social_links" class="d-block d-md-inline-flex flex-column text-center p-1 float-md-right shadow mt-md-5">
+                <a href="https://www.facebook.com/rubyrubz0615/" class="p-1" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/login" class="p-1" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/accounts/login/" class="p-1" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://github.com/RubyRubz" class="p-1" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="#" class="p-1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div id="portfolio_slider" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- note: added data-interval false to prevent 25sliding -->
+            <ol class="carousel-indicators">
+                <li data-target="#portfolio_slider" data-slide-to="0" class="active"><i class="fa fa-home" aria-hidden="true"></i></li>
+                <li data-target="#portfolio_slider" data-slide-to="1"><i class="fa fa-user" aria-hidden="true"></i></li>
+                <li data-target="#portfolio_slider" data-slide-to="2"><i class="fa fa-list-ol" aria-hidden="true"></i></li>
+                <li data-target="#portfolio_slider" data-slide-to="3"><i class="fa fa-list-alt" aria-hidden="true"></i></li>
+                <li data-target="#portfolio_slider" data-slide-to="4"><i class="fa fa-code-fork" aria-hidden="true"></i></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center" id="section_home">
+                    <h1 class="p-5">Welcome To My Portfolio Site!</h1>
+                    <div class="container">
+                        <h2 class="text-center mb-2"><span class="border-warning border-bottom">Hi! I'm Robin Jean O. Naragdao</span></h2>
+                        <h4 class="text-center mt-3 mb-5">Full-Stack Web Developer</h4>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <p id="q1"  class="trans_bg text-light p-4">I build things for the web. With a mission to present the posibilities of web design and programming. I am pursuing new expressions through experiments and thoughts.</p>
+                                <p id="q2" class="trans_bg text-light p-4">I like to craft solid and scalable frontend products with great user experiences.</p>
+                                <p id="q3" class="text-right mt-5"><a href="#" data-target="#portfolio_slider" data-slide-to="4" class=" projects btn btn-warning btn-lg">My Projects</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="section_aboutme">
+                    <h1 class="p-5">About Me</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div id="p1" class="col-md-6 col-12 p-3"><strong class="bg-dark text-light p-1">Full Name:</strong> Robin Jean Obong Naragdao</div>
+                            <div id="p2" class="col-md-6 col-12 p-3 text-md-right"><strong class="bg-dark text-light p-1">Gender:</strong> Female</div>
+                            <div id="p3" class="col-md-6 col-12 p-3"><strong class="bg-dark text-light p-1">Location:</strong> Quezon City, NCR, Philippines</div>
+                            <div id="p4" class="col-md-6 col-12 p-3 text-md-right "><strong class="bg-dark text-light p-1">Birth Date</strong> October 14, 1992</div>
+                        </div>
+                        <ul id="p5" class="mt-5 mb-5">
+                            <li class="trans_bg text-light text-md-left text-center p-3 w-100 d-table">
+                                <img src="./images/uep.png" class="float-md-left mr-3" />
+                                <strong class="d-block w-100 ml-3 mr-3 p-3">Bachelor of Science in Information Technology (2010 - 2014)</strong>
+                                @ University of Eastern Philippines
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item" id="section_skills">
+                    <h1 class="p-5">Skills</h1>
+                    <div class="container">
+                        <ul class="row mt-3 text-light text-center">
+                            <li id="sk1" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <img class="img-fluid" src="./images/html5.png">
+                                    <strong class="d-block mt-4">HTML5</strong>
+                                </div>
+                            </li>
+                            <li id="sk2" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <img class="img-fluid" src="./images/css3.png">
+                                    <strong class="d-block mt-4">CSS3</strong>
+                                </div>
+                            </li>
+                            <li id="sk3" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <img class="img-fluid" src="./images/bootstrap.png">
+                                    <strong class="d-block mt-4">Bootstrap</strong>
+                                </div>
+                            </li>
+                            <li id="sk4" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <img class="img-fluid" class="img-fluid" src="./images/phyton.png">
+                                    <strong class="d-block mt-4">Python</strong>
+                                </div>
+                            </li>
+                            <li id="sk5" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <img class="img-fluid" src="./images/logo-git.png">
+                                    <strong class="d-block mt-4">Git</strong>
+                                </div>
+                            </li>
+                            <li id="sk6" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <img class="img-fluid" src="./images/wordpress_logo.png">
+                                    <strong class="d-block mt-4">WordPress</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item" id="section_work">
+                    <h1 class="p-5">Work Experience</h1>
+                    <div class="container">
+                        <ul class="mt-5 mb-5">
+                            <li class="trans_bg text-light text-md-left text-center p-3 w-100 d-table">
+                                <img src="./images/experience-icon.png" class="float-md-left mr-3" />
+                                <strong class="d-block w-100 ml-3 mr-3 p-3">Telesales/Outbound Rule</strong>
+                                <strong class="d-block w-100 ml-3 mr-3 p-3"> @Artlets Business Solution (a subsidiary company of Globe Telecommunication)</strong>
+                                August 2014 - January 2015
+                            </li>
+                            <li class="trans_bg text-light text-md-left text-center p-3 w-100 d-table mt-4">
+                                <img src="./images/experience-icon.png" class="float-md-left mr-3" />
+                                <strong class="d-block w-100 ml-3 mr-3 p-3">Technical Support Representative (Officer In Charge)</strong>
+                                <strong class="d-block w-100 ml-3 mr-3 p-3"> @SPI CRM Inc.</strong>
+                                November 2015 - January 2016
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item" id="section_projects">
+                    <h1 class="p-5">Projects</h1>
+                    <h2 class="p-3" id="qoute">"Working with my hands to make magic happen on the internet." </h2>
+                
+                    <div class="container">
+                        <ul class="row mt-3 text-light text-center">
+                            <li id="sk1" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <a href="#" data-toggle="modal" data-target="#proj1">
+                                        <img class="img-fluid" src="./images/thumb-project1.png">
+                                        <strong class="d-block mt-4">1</strong>
+                                    </a>
+                                </div>
+
+                                <!-- Modal Start -->
+                                    <div class="modal fade" id="proj1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body text-dark">
+                                                    <img class="img-fluid" src="./images/project1.jpg">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- Modal End -->                                
+                            </li>
+                            <li id="sk2" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <a href="#" data-toggle="modal" data-target="#proj2">
+                                        <img class="img-fluid" src="./images/thumb-project2.png">
+                                        <strong class="d-block mt-4">2</strong>
+                                    </a>
+                                </div>
+                                 <!-- Modal Start -->
+                                    <div class="modal fade" id="proj2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body text-dark">
+                                                    <img class="img-fluid" src="./images/project2.jpg">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- Modal End -->   
+
+                            </li>
+                            <li id="sk3" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <a href="#" data-toggle="modal" data-target="#proj3">
+                                    <img class="img-fluid" src="./images/thumb-project3.png">
+                                    <strong class="d-block mt-4">3</strong>
+                                </div>
+                                <!-- Modal Start -->
+                                    <div class="modal fade" id="proj3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body text-dark">
+                                                    <img class="img-fluid" src="./images/project3.png">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- Modal End -->   
+                            </li>
+                            <li id="sk4" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <a href="#" data-toggle="modal" data-target="#proj4">
+                                    <img class="img-fluid" class="img-fluid" src="./images/thumb-project4.png">
+                                    <strong class="d-block mt-4">4</strong>
+                                </div>
+                                 <!-- Modal Start -->
+                                    <div class="modal fade" id="proj4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body text-dark">
+                                                    <img class="img-fluid" src="./images/project4.jpg">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- Modal End -->  
+                            </li>
+                            <li id="sk5" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <a href="#" data-toggle="modal" data-target="#proj5">
+                                    <img class="img-fluid" src="./images/thumb-project5.png">
+                                    <strong class="d-block mt-4">5</strong>
+                                </div>
+                                 <!-- Modal Start -->
+                                    <div class="modal fade" id="proj5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body text-dark">
+                                                    <img class="img-fluid" src="./images/project5.jpg">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- Modal End -->  
+                            </li>
+                            <li id="sk6" class="col-12 col-sm-6 col-md-4">
+                                <div class="trans_bg border border-dark p-3 mb-3 ml-1 mr-2">
+                                    <a href="#" data-toggle="modal" data-target="#proj6">
+                                    <img class="img-fluid" src="./images/thumb-project6.png">
+                                    <strong class="d-block mt-4">6</strong>
+                                </div>
+                                <!-- Modal Start -->
+                                    <div class="modal fade" id="proj6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body text-dark">
+                                                    <img class="img-fluid" src="./images/project6.jpg">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <!-- Modal End -->  
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-target="#portfolio_slider" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#portfolio_slider" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button> -->
+        </div>
+    </div>
+    <!-- Modal Start -->
+    <div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center bg-dark text-light">
+                        <h5 class="modal-title ">Please fill up the form to send me an email!</h5>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name Here" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email Here" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Message:</label>
+                                <textarea class="form-control" placeholder="Your Message Here" id="message" rows="7"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+
+</html>
