@@ -131,6 +131,37 @@ h2 {
 	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);	
 }
 
+/*made my own color bg gradient using https://cssgradient.io/*/
+.sticky_bg {
+	background-color: #fff;
+	background-image: linear-gradient(#f3dc50, #f8e577, #ffff88, #ffff88, #ffff88, #ffff88);
+	border: none !important;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.50);
+	color: #000 !important;
+	position: relative;
+}
+
+.sticky_bg:nth-child(1) {
+	transform: rotate(1.5deg);
+}	
+.sticky_bg:nth-child(2) {
+	transform: rotate(-0.5deg);
+}
+
+/*added red pin on the sticky notes using psuedo element*/
+.sticky_bg::before {
+	content: "";
+	background: #ff0000;
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
 .carousel-indicators {
 	background: rgba(99, 82, 71, 0.8);
 	width: 100%;
@@ -208,6 +239,8 @@ h2 {
   	animation-iteration-count: infinite;	  	
 }
 
+
+/*moving bg texture*/
 @keyframes animatedBackground {
   0% {
     background-size: 100% 100%;
@@ -374,37 +407,37 @@ h2 {
 #section_projects.active #sk1 {
 	animation-name: lightSpeedInLeft;
   	animation-duration: 1s;
-  	animation-iteration-count: 2;
+  	animation-iteration-count: 1;
 }
 
 #section_projects.active #sk2 {
 	animation-name: jackInTheBox;
   	animation-duration: 1s;
-  	animation-iteration-count: 2;
+  	animation-iteration-count: 1;
 }
 
 #section_projects.active #sk3 {
 	animation-name: lightSpeedInRight;
   	animation-duration: 1s;
-  	animation-iteration-count: 2;
+  	animation-iteration-count: 1;
 }
 
 #section_projects.active #sk4 {
 	animation-name: lightSpeedInLeft;
   	animation-duration: 1s;
-  	animation-iteration-count: 2;
+  	animation-iteration-count: 1;
 }
 
 #section_projects.active #sk5 {
 	animation-name: jackInTheBox;
   	animation-duration: 1s;
-  	animation-iteration-count: 2;
+  	animation-iteration-count: 1;
 }
 
 #section_projects.active #sk6 {
 	animation-name: lightSpeedInRight;
   	animation-duration: 1s;
-  	animation-iteration-count: 2;
+  	animation-iteration-count: 1;
 }
 
 
